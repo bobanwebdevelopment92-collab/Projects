@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply leading-tight;
+    }
+    
+    /* Sakrivanje skrolbara za čistiji dizajn (opciono) */
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    ::-webkit-scrollbar-track {
+        @apply bg-brand-dark;
+    }
+    ::-webkit-scrollbar-thumb {
+        @apply bg-brand-primary;
+    }
+}
+
+/* Custom klasa za tekst koji se preseca (Brutalist style) */
+.text-outline {
+    -webkit-text-stroke: 1px rgba(249, 250, 251, 0.3);
+    color: transparent;
+}
